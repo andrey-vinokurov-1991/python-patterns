@@ -38,6 +38,9 @@ class DiaryBrokenSRP(Diary):
 
 
 class FileManager:
+    def __init__(self):
+        pass
+
     @staticmethod
     def save_to_file(diary: Diary, filename: str):
         with open(filename, "w") as f:
@@ -77,5 +80,3 @@ if __name__ == '__main__':
     file_manager.remove_file("temp.txt")
     diary.remove_all_tasks()
     print(f"tasks:\n{str(diary)}")
-
-
