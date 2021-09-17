@@ -1,8 +1,10 @@
 """Single Responsibility Principle.
 
-A class should have only one job. If a class has more than one responsibility,
-it becomes coupled. A change to one responsibility results to modification of
-the other responsibility.
+"You had one job. Just the one.". Loki.
+
+A class should have only one job. If a
+class has more than one responsibility, it becomes coupled. A change to one
+responsibility results to modification of the other responsibility.
 """
 import os
 
