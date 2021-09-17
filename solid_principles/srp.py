@@ -1,3 +1,9 @@
+"""Single Responsibility Principle.
+
+A class should have only one job. If a class has more than one responsibility,
+it becomes coupled. A change to one responsibility results to modification of
+the other responsibility.
+"""
 import os
 
 
@@ -19,9 +25,6 @@ class Diary:
 
 
 class DiaryBrokenSRP(Diary):
-    def __init__(self):
-        super().__init__()
-
     # breaking SRP
     def save(self, filename: str):
         with open(filename, "w") as f:
@@ -70,13 +73,13 @@ if __name__ == '__main__':
     print("\n")
 
     print("Correct Diary testing...")
-    diary = Diary()
+    diary_object = Diary()
     file_manager = FileManager()
-    diary.add_task("Explore the Universe")
-    diary.add_task("Enjoy")
-    file_manager.save_to_file(diary, "temp.txt")
-    file_manager.load_from_file(diary, "temp.txt")
-    print(f"tasks:\n{str(diary)}")
+    diary_object.add_task("Explore the Universe")
+    diary_object.add_task("Enjoy")
+    file_manager.save_to_file(diary_object, "temp.txt")
+    file_manager.load_from_file(diary_object, "temp.txt")
+    print(f"tasks:\n{str(diary_object)}")
     file_manager.remove_file("temp.txt")
-    diary.remove_all_tasks()
-    print(f"tasks:\n{str(diary)}")
+    diary_object.remove_all_tasks()
+    print(f"tasks:\n{str(diary_object)}")

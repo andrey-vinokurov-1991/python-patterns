@@ -32,3 +32,13 @@ repos:
     hooks:
       - id: docformatter
         args: ["--in-place", "--wrap-descriptions", "79"]
+  - repo: https://github.com/pre-commit/mirrors-pylint
+    rev: '574ec710c510f55074779501fd02682ed0dbc769'
+    hooks:
+      - id: pylint
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.910
+    hooks:
+      - id: mypy
+        args: [--no-strict-optional, --ignore-missing-imports ]
+        additional_dependencies: [tokenize-rt==3.2.0]
