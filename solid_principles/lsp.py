@@ -1,5 +1,8 @@
 """Liskov Substitution Principle.
 
+"Let q(x) be a property provable about objects of x of type T.
+Then q(y) should be provable for objects y of type S where S is a subtype of T."
+
 Don't Forget Your Roots.
 
 A sub-class must be substitutable for its super-class.  The aim of this

@@ -1,5 +1,7 @@
 """Single Responsibility Principle.
 
+"A class should have one, and only one, reason to change"
+
 "You had one job. Just the one.". Loki.
 
 A class should have only one job. If a

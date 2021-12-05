@@ -1,5 +1,7 @@
 """Open-Closed Principle.
 
+"Software entities(Classes, modules, functions) should be open for extension, not modification."
+
 When in Rome, do as the Romans do
  or build your own city based on Rome and build new habits.
 
